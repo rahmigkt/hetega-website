@@ -221,4 +221,16 @@
   <url><loc>https://hetega.com/products/tip-167-15-kaziyici</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://hetega.com/products/tip-167-16-i-ki-plakali-speculum</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://hetega.com/products/tip-167-17-eskilerin-el-ev-il-aleti</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://hetega.com/koleksiyonlar</loc><changefreq>weekly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://hetega.com/koleksiyonlar/astronomi</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hetega.com/koleksiyonlar/usturlaplar</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hetega.com/koleksiyonlar/cografya-ve-seyrusefer</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hetega.com/koleksiyonlar/saatler</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hetega.com/koleksiyonlar/tesviye-ve-geometri</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hetega.com/koleksiyonlar/optik</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hetega.com/koleksiyonlar/fizik-ve-teknik</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hetega.com/koleksiyonlar/askeri-teknoloji</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hetega.com/koleksiyonlar/kimya</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hetega.com/koleksiyonlar/tip</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hetega.com/koleksiyonlar/mimari</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
 </urlset>
