@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hetega.com/sitemap.xml
+Host: https://hetega.com
