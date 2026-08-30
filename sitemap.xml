@@ -232,4 +232,15 @@
   <url><loc>https://hetega.com/koleksiyonlar/kimya</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://hetega.com/koleksiyonlar/tip</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
   <url><loc>https://hetega.com/koleksiyonlar/mimari</loc><changefreq>weekly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://hetega.com/koleksiyonlar/astronomi/tumu</loc><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://hetega.com/koleksiyonlar/usturlaplar/tumu</loc><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://hetega.com/koleksiyonlar/cografya-ve-seyrusefer/tumu</loc><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://hetega.com/koleksiyonlar/saatler/tumu</loc><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://hetega.com/koleksiyonlar/tesviye-ve-geometri/tumu</loc><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://hetega.com/koleksiyonlar/optik/tumu</loc><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://hetega.com/koleksiyonlar/fizik-ve-teknik/tumu</loc><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://hetega.com/koleksiyonlar/askeri-teknoloji/tumu</loc><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://hetega.com/koleksiyonlar/kimya/tumu</loc><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://hetega.com/koleksiyonlar/tip/tumu</loc><changefreq>weekly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://hetega.com/koleksiyonlar/mimari/tumu</loc><changefreq>weekly</changefreq><priority>0.75</priority></url>
 </urlset>
