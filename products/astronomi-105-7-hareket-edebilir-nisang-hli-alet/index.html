@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="tr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="tr"><head><script>(function(){var saved=localStorage.getItem("mukantara-theme");var theme=saved==="dark"?"dark":"light";document.documentElement.setAttribute("data-theme",theme);})();</script><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nişangâh (hareketli) — HETEGA</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--ink:#3c4654;--paper:#fdfcf9;--paper-light:#faf9f6;--line:#e2e2e2;--font-display:"Cinzel","EB Garamond",Georgia,serif;--font-serif:"EB Garamond",Georgia,serif;--font-body:"Inter",sans-serif;--brass:#b6874f;--brass-deep:#8a6238;--card-bg:#ececec;--muted-text:#6b7280;--line-on-grey:rgba(60,70,84,.16);}
@@ -73,6 +73,17 @@ footer h3{text-transform:uppercase;letter-spacing:.15em;margin-bottom:1.2rem;fon
 .product-breadcrumb{color:#746c62!important;font-size:.66rem!important;}
 .spec span{font-size:.57rem!important;color:#7a7268!important;text-transform:uppercase;}
 .spec strong{font-size:.72rem!important;}
+[data-theme=dark]{--ink:#ece4d3;--paper:#100e0c;--paper-light:#17140f;--line:#ece4d324;--brass:#b8874a;--brass-light:#d9ab6f;--card-bg:#17140f;--muted-text:#a89e8e;}
+[data-theme=dark] footer{background:#000;}
+.nav{transition:none;}
+@media (max-width:820px){
+  .nav{position:absolute;top:100%;left:0;right:0;background:var(--paper);flex-direction:column;gap:1rem;padding:1.2rem 5vw;border-bottom:1px solid var(--line);display:none;z-index:10;}
+  .nav.is-open{display:flex;}
+  .menu-button{display:inline-flex!important;flex-direction:column;justify-content:center;gap:5px;width:34px;height:34px;border:none;background:transparent;cursor:pointer;}
+  .menu-button span{display:block;width:22px;height:2px;background:var(--ink);}
+}
+.menu-button{display:none;}
+.site-header{position:relative;}
 </style></head><body>
 
 <header class="site-header"><a href="/calisma-tam/" class="brand" aria-label="HETEGA, anasayfa"><span class="brand-mark">H</span><span>HETEGA</span></a><button class="menu-button" aria-expanded="false" aria-label="Menüyü aç"><span></span><span></span></button><nav class="nav" aria-label="Ana menü"><a href="/#koleksiyonlar">Koleksiyonlar</a><a href="/products">Envanter</a><a href="/artist">Koleksiyon Hakkında</a><a href="/contact">İletişim</a></nav><div class="header-actions"><button aria-label="Açık temaya geç" style="width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer;display:grid;place-items:center;font-size:1rem;margin-right:.4rem">☀</button><a class="header-contact header-text" href="mailto:info@hetega.com"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2M9 11H7V9h2zm4 0h-2V9h2zm4 0h-2V9h2z"></path></svg><span>Yazın</span></a></div></header>
@@ -89,4 +100,31 @@ footer h3{text-transform:uppercase;letter-spacing:.15em;margin-bottom:1.2rem;fon
     <div class="uzun-aciklama"><p class="text">Hareket Edebilir Nişangâhlı Alet, el-Urdî'nin 'Risâle fî Keyfiyyet er-Raşad' adlı eserinde Merâğa Rasathanesi için tasarladığı üçüncü alet olarak detaylandırılır. Antik ve erken İslam dönemi gözlem aletlerinde nişangâhlar (diopterler) genellikle sabit eksenlere bağlıydı ve gözlemcinin gökyüzündeki hızlı hareket eden cisimleri (gezegenler, kuyruklu yıldızlar) takip etmesini zorlaştırıyordu. el-Urdî, bu sorunu çözmek için nişangâhı hem azimut (yatay) hem de yükseklik (dikey) eksenlerinde bağımsız olarak dönebilen bir mekanizmaya oturtmuştur. Bu alet, gök cisimlerinin ufuk üzerindeki konumlarını (semt ve irtifâ) eşzamanlı ve çok daha yüksek bir hassasiyetle okumaya olanak tanıyordu. Aletin mekanik esnekliği, rasathane ekibinin (ki bu ekip beş kişilik bir gözlem heyetinden oluşuyordu) koordineli çalışmasını kolaylaştırmış, tutulma ve kavuşum gözlemlerindeki hata payını minimize etmiştir. Bu serbest hareketli nişangâh prensibi, yüzyıllar sonra Avrupa rasathanelerindeki teodolitlerin ve modern transit aletlerin atası sayılır.</p></div>
   </div>
 </div><footer style="grid-template-columns:2fr 1fr"><div class="footer-brand"><span class="brand-mark">H</span><h2>HETEGA</h2><p>Heritage of Engineering &amp; Technology in the Golden Age.</p></div><div><h3>İletişim</h3><a class="footer-icon-link" href="mailto:info@hetega.com"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4-8 5-8-5V6l8 5 8-5z"></path></svg><span>info@hetega.com</span></a></div><div class="copyright"><p>© 2026 HETEGA — bir Global Science Advancement koleksiyonu. Tasarım ve üretim: MUKANTARA. İçerik ve görseller Prof. Dr. Fuat Sezgin’in yarım asırlık araştırmalarına dayanmaktadır.</p></div></footer></div>
+<script>
+(function(){
+  var themeBtn = document.querySelector('.header-actions button[aria-label]');
+  function setIcon(){
+    var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    if(themeBtn){ themeBtn.textContent = isDark ? '\u263E' : '\u2600'; themeBtn.setAttribute('aria-label', isDark ? 'Açık temaya geç' : 'Koyu temaya geç'); }
+  }
+  setIcon();
+  if(themeBtn){
+    themeBtn.addEventListener('click', function(){
+      var cur = document.documentElement.getAttribute('data-theme');
+      var next = cur === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('mukantara-theme', next);
+      setIcon();
+    });
+  }
+  var menuBtn = document.querySelector('.menu-button');
+  var nav = document.querySelector('.nav');
+  if(menuBtn && nav){
+    menuBtn.addEventListener('click', function(){
+      var open = nav.classList.toggle('is-open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+})();
+</script>
 </body></html>
