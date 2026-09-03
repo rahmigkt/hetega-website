@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="tr"><head><script>(function(){var saved=localStorage.getItem("mukantara-theme");var theme=saved==="dark"?"dark":"light";document.documentElement.setAttribute("data-theme",theme);})();</script><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Yapımcı: Hasan İbn el-Heysem (Ebû Alî el-Hasan b. el-Heysem) — HETEGA</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>Yapımcı: Piri Reis (Hacı Ahmed Muhiddin Piri) — HETEGA</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--ink:#3c4654;--paper:#fdfcf9;--paper-light:#faf9f6;--line:#e2e2e2;--font-display:"Cinzel","EB Garamond",Georgia,serif;--font-serif:"EB Garamond",Georgia,serif;--font-body:"Inter",sans-serif;--brass:#b6874f;--brass-deep:#8a6238;--card-bg:#ececec;--muted-text:#6b7280;--line-on-grey:rgba(60,70,84,.16);}
 *{box-sizing:border-box;}
@@ -36,41 +36,37 @@ h2.section-title{font-family:var(--font-display);font-weight:600;font-size:1.25r
 .maker-head h2{font-family:var(--font-display);font-weight:600;font-size:clamp(1.5rem,2.4vw,2.1rem);margin:0 0 .4rem;}
 .maker-head .latin{font-family:var(--font-serif);font-style:italic;color:var(--muted-text);font-size:1rem;margin:0;}
 .maker-meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.1rem 1.4rem;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:1.4rem 0 1.8rem;padding:1.1rem 0;}
-@media (max-width:640px){.maker-meta{grid-template-columns:repeat(2,1fr);}}
-.spec span{display:block;font-size:.6rem;font-weight:700;letter-spacing:.02em;color:#7a7268;margin-bottom:.3rem;}
-.spec strong{display:block;font-size:.76rem;font-family:var(--font-body);font-weight:600;color:var(--ink);}
+.spec span{display:block;font-size:.6rem;font-weight:700;color:#7a7268;margin-bottom:.3rem;}
+.spec strong{display:block;font-size:.76rem;font-weight:600;color:var(--ink);}
 .maker-bio p{font-family:var(--font-serif);font-size:1.03rem;color:#4a4640;line-height:1.8;max-width:76ch;margin:0 0 1.6rem;}
 .maker-lists{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-bottom:1.8rem;}
-@media (max-width:700px){.maker-lists{grid-template-columns:1fr;}}
-.maker-lists h3{font-family:var(--font-body);font-size:.68rem;font-weight:700;letter-spacing:.02em;color:#7a7268;margin:0 0 .7rem;}
+.maker-lists h3{font-size:.68rem;font-weight:700;color:#7a7268;margin:0 0 .7rem;}
 .maker-lists ul{margin:0;padding-left:1.1rem;font-family:var(--font-serif);font-size:.94rem;color:#4a4640;line-height:1.6;}
-.maker-lists li{margin-bottom:.4rem;}
 .katki{border-left:3px solid var(--brass);background:#b6874f14;padding:1rem 1.2rem;font-family:var(--font-serif);font-size:.98rem;color:#554f47;line-height:1.65;max-width:76ch;margin-bottom:2.2rem;}
-.maker-works-title{font-family:var(--font-body);font-size:.7rem;font-weight:700;letter-spacing:.02em;color:#7a7268;margin:0 0 1.2rem;padding-top:1.5rem;border-top:1px solid var(--line);}
+.maker-works-title{font-size:.7rem;font-weight:700;color:#7a7268;margin:0 0 1.2rem;padding-top:1.5rem;border-top:1px solid var(--line);}
 .card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1.8rem;padding:0;max-width:1180px;margin:0 auto;}
 .item-card{position:relative;display:flex;flex-direction:column;color:inherit;text-decoration:none;background:var(--card-bg);border-radius:2px;overflow:hidden;}
 .item-card::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:2;background:radial-gradient(ellipse at 50% 40%, transparent 50%, rgba(0,0,0,.13) 100%);}
-.item-card .thumb{position:relative;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;overflow:hidden;}
-.item-card .thumb img{width:100%;height:100%;object-fit:contain;padding:1.4rem;}
-.item-card .body{position:relative;z-index:3;padding:1.1rem 1.25rem 1.7rem;flex:1;display:flex;flex-direction:column;gap:.5rem;min-height:9.5rem;}
-.item-card .meta-line{font-size:.62rem;font-weight:700;letter-spacing:.02em;color:var(--brass-deep);display:flex;justify-content:space-between;gap:.5rem;}
-.item-card h3{font-family:var(--font-display);font-weight:500;font-size:.95rem;line-height:1.32;margin:0;color:var(--ink);}
+.item-card .thumb{aspect-ratio:1/1;background:var(--card-bg);}
+.item-card .body{position:relative;z-index:3;padding:1.1rem 1.25rem 1.7rem;flex:1;min-height:9.5rem;}
+.item-card .meta-line{font-size:.62rem;font-weight:700;color:var(--brass-deep);display:flex;justify-content:space-between;gap:.5rem;}
+.item-card h3{font-family:var(--font-display);font-weight:500;font-size:.95rem;color:var(--ink);}
 </style></head><body>
 <header class="site-header"><a href="/calisma-tam/" class="brand" aria-label="HETEGA, anasayfa"><span class="brand-mark">H</span><span>HETEGA</span></a><button class="menu-button" aria-expanded="false" aria-label="Menüyü aç"><span></span><span></span></button><nav class="nav" aria-label="Ana menü"><a href="/#koleksiyonlar">Koleksiyonlar</a><a href="/products">Envanter</a><a href="/artist">Koleksiyon Hakkında</a><a href="/contact">İletişim</a></nav><div class="header-actions"><button aria-label="Açık temaya geç" style="width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer;display:grid;place-items:center;font-size:1rem;margin-right:.4rem">☀</button><a class="header-contact header-text" href="mailto:info@hetega.com"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2M9 11H7V9h2zm4 0h-2V9h2zm4 0h-2V9h2z"></path></svg><span>Yazın</span></a></div></header>
 <section class="maker-section"><div class="maker-inner">
-  <a class="product-back" href="/products/optik-146-3-karanlik-oda/"><span>←</span> Camera Obscura sayfasına dön</a>
-  <div class="maker-head"><p class="eyebrow">Yapımcı / Bilgin</p><h2>Hasan İbn el-Heysem (Ebû Alî el-Hasan b. el-Heysem)</h2><p class="latin">Alhazen / Ibn al-Haytham</p></div>
+  <a class="product-back" href="/products/yeni-a328-piri-reis-haritasi/"><span>←</span> Piri Reis Haritası sayfasına dön</a>
+  <div class="maker-head"><p class="eyebrow">Yapımcı / Bilgin</p><h2>Piri Reis (Hacı Ahmed Muhiddin Piri)</h2><p class="latin">Piri Reis</p></div>
   <div class="maker-meta">
-    <div class="spec"><span>Doğum / Ölüm</span><strong>354/965 - 430/1040</strong></div>
-    <div class="spec"><span>Bölge</span><strong>Basra / Kahire</strong></div>
-    <div class="spec"><span>Alan</span><strong>Optik, Fizik, Matematik, Astronomi</strong></div>
+    <div class="spec"><span>Doğum / Ölüm</span><strong>y. 1465 - 1553</strong></div>
+    <div class="spec"><span>Bölge</span><strong>Gelibolu / İstanbul / Akdeniz</strong></div>
+    <div class="spec"><span>Alan</span><strong>Kartografya, Denizcilik</strong></div>
   </div>
-  <div class="maker-bio"><p>Modern optiğin ve deneysel bilimsel metodolojinin kurucusudur. Fâtımî Halifesi el-Hâkim'in davetiyle Kahire'ye gitmiş, Nil'i kontrol altına alma projesinin fiziksel imkânsızlığını anlayınca kendini bilimsel araştırmalara adamıştır. 7 ciltlik anıtsal eseri 'Kitâb el-Menâzır' (Optik Kitabı), görme olayının gözden çıkan ışınlarla değil, nesnelerden göze giren ışınlarla gerçekleştiğini kanıtlayarak antik Yunan'ın 'görsel akı' (extramission) teorisini çürütmüştür.</p></div>
-  <div class="maker-lists"><div><h3>Önemli Eserleri</h3><ul><li>Kitâb el-Menâzır (Optik Kitabı)</li><li>Makale fî Dav' el-Kamer (Ay Işığı Üzerine)</li><li>el-Menâzır'ın Latince çevirisi (De Aspectibus)</li></ul></div><div><h3>Aletleri</h3><ul><li>Camera Obscura (Karanlık Oda)</li><li>Parabolik Aynalar</li><li>Küresel Mercekler</li><li>Ay Işığı Deney Düzeneği</li></ul></div></div>
-  <div class="katki">Deneysel bilimsel metodu (hipotez, deney, doğrulama) tarihte ilk kez sistematik olarak uygulayan bilim adamıdır. Kepler, Newton ve Rönesans optiğinin doğrudan öncüsüdür. Fotografinin temeli olan camera obscura'yı ilk kez bilimsel olarak analiz etmiştir.</div>
+  <div class="maker-bio"><p>Osmanlı denizcisi ve kartografı. 1513 tarihli dünya haritası, Kristof Kolomb'un kayıp haritasının izlerini taşıyan ve İslam/Akdeniz portolan (seyir haritası) geleneğinin zirvesi olan eşsiz bir belgedir.</p></div>
+  <div class="maker-lists"><div><h3>Önemli Eserleri</h3><ul><li>1513 Dünya Haritası</li><li>Kitâb-ı Bahriye</li></ul></div><div><h3>Aletleri</h3><ul><li>Portolan Haritalar</li><li>Pusula Gülleri</li><li>Parşömen</li></ul></div></div>
+  <div class="katki">İslam ve Akdeniz denizciliğinin haritacılıktaki sentezini kurmuş; Kolomb'un kayıp verilerini günümüze taşıyan yegâne kartografik mirası bırakmıştır.</div>
   <p class="maker-works-title">Bu yapımcının bu turda işlenen eseri</p>
-  <div class="card-grid"><a class="item-card" href="/products/optik-146-3-karanlik-oda/"><div class="thumb"></div><div class="body"><div class="meta-line"><span>Optik · Hasan İbn el-Heysem (Ebû Alî el-Hasan b. el-Heysem)</span><span class="env">—</span></div><h3>Camera Obscura (Beyt Muzlim)</h3></div></a><a class="item-card" href="/products/optik-anlatili-62-i-bn-i-heysem-in-ay-gozlem-aleti/"><div class="thumb"></div><div class="body"><div class="meta-line"><span>Optik · Hasan İbn el-Heysem</span><span class="env">—</span></div><h3>Ay Işığı Deney Düzeneği</h3></div></a></div>
-<a class="item-card" href="/products/yeni-a034-yansima-aleti/"><div class="thumb"></div><div class="body"><div class="meta-line"><span>Optik · Hasan İbn el-Heysem</span><span class="env">—</span></div><h3>Yansıma Aleti</h3></div></a></div></section>
+  <div class="card-grid"><a class="item-card" href="/products/yeni-a328-piri-reis-haritasi/"><div class="thumb"></div><div class="body"><div class="meta-line"><span>Coğrafya ve Seyrüsefer · Piri Reis (Hacı Ahmed Muhiddin Piri)</span><span class="env">—</span></div><h3>Piri Reis Haritası (1513)</h3></div></a></div>
+</div></section>
 <footer style="grid-template-columns:2fr 1fr"><div class="footer-brand"><span class="brand-mark">H</span><h2>HETEGA</h2><p>Heritage of Engineering &amp; Technology in the Golden Age.</p></div><div><h3>İletişim</h3><a class="footer-icon-link" href="mailto:info@hetega.com"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4-8 5-8-5V6l8 5 8-5z"></path></svg><span>info@hetega.com</span></a></div><div class="copyright"><p>© 2026 HETEGA — bir Global Science Advancement koleksiyonu. Tasarım ve üretim: MUKANTARA. İçerik ve görseller Prof. Dr. Fuat Sezgin’in yarım asırlık araştırmalarına dayanmaktadır.</p></div></footer>
 <script>
 (function(){
