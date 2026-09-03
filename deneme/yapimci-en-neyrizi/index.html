@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="tr"><head><script>(function(){var saved=localStorage.getItem("mukantara-theme");var theme=saved==="dark"?"dark":"light";document.documentElement.setAttribute("data-theme",theme);})();</script><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yapımcı: el-Fadl b. Hâtim en-Neyrîzî — HETEGA</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#3c4654;--paper:#fdfcf9;--paper-light:#faf9f6;--line:#e2e2e2;--font-display:"Cinzel","EB Garamond",Georgia,serif;--font-serif:"EB Garamond",Georgia,serif;--font-body:"Inter",sans-serif;--brass:#b6874f;--brass-deep:#8a6238;--card-bg:#ececec;--muted-text:#6b7280;--line-on-grey:rgba(60,70,84,.16);}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--paper-light);color:var(--ink);font-family:var(--font-body);-webkit-font-smoothing:antialiased;}
+.deneme-banner{background:#3c4654;color:#f3ede1;text-align:center;padding:.55rem 1rem;font-size:.75rem;line-height:1.5;}
+.deneme-banner strong{color:var(--brass);}
+.site-header{display:flex;align-items:center;justify-content:space-between;padding:1rem 5vw;border-bottom:1px solid var(--line);background:var(--paper);}
+.site-header .brand{display:flex;align-items:center;gap:.5rem;color:var(--ink);text-decoration:none;font-family:var(--font-display);font-weight:600;font-size:1.05rem;}
+.site-header .brand-mark{width:28px;height:28px;border:1px solid var(--brass);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.85rem;}
+.site-header .nav{display:flex;gap:1.6rem;}
+.site-header .nav a{color:var(--ink);text-decoration:none;font-size:.8rem;}
+.site-footer{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem;padding:2.5rem 5vw;background:var(--paper);border-top:1px solid var(--line);}
+.site-footer h2{font-family:var(--font-display);font-size:1.1rem;margin:.3rem 0;}
+.site-footer p{color:var(--muted-text);font-size:.78rem;max-width:340px;margin:0;}
+.site-footer .footer-brand{display:flex;flex-direction:column;}
+.site-footer .footer-brand .brand-mark{width:26px;height:26px;border:1px solid var(--brass);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);}
+h2.section-title{font-family:var(--font-display);font-weight:600;font-size:1.25rem;margin:3rem 5vw 1.2rem;padding-bottom:.7rem;border-bottom:1px solid var(--line);}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1.8rem;padding:0 5vw 2.5rem;max-width:1180px;margin:0 auto;}
+.item-card{position:relative;display:flex;flex-direction:column;color:inherit;text-decoration:none;background:var(--card-bg);border-radius:2px;overflow:hidden;}
+.item-card::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:2;background:radial-gradient(ellipse at 50% 40%, transparent 50%, rgba(0,0,0,.13) 100%);}
+.item-card .thumb{position:relative;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;overflow:hidden;background:var(--card-bg);}
+.item-card .thumb img{width:100%;height:100%;object-fit:contain;padding:1.4rem;}
+.item-card .body{position:relative;z-index:3;padding:1.1rem 1.25rem 1.7rem;flex:1;display:flex;flex-direction:column;gap:.5rem;min-height:9.5rem;}
+.item-card .meta-line{font-size:.62rem;font-weight:700;letter-spacing:.02em;color:var(--brass-deep);display:flex;justify-content:space-between;gap:.5rem;}
+.item-card .meta-line .env{color:#8a8172;font-weight:600;font-family:var(--font-body);}
+.item-card h3{font-family:var(--font-display);font-weight:500;font-size:.95rem;line-height:1.32;margin:0;color:var(--ink);}
+.item-card p{font-family:var(--font-body);font-size:.79rem;color:var(--muted-text);line-height:1.5;margin:0;}
+
+.maker-section{background:var(--paper);}
+.maker-inner{max-width:1180px;margin:0 auto;padding:2.4rem 5vw 3.5rem;}
+.product-back{display:inline-flex;align-items:center;gap:.6rem;font-size:.72rem;font-weight:700;color:var(--ink);text-decoration:none;margin-bottom:1.6rem;}
+.maker-head .eyebrow{font-size:.7rem;font-weight:600;color:var(--brass-deep);margin:0 0 .5rem;}
+.maker-head h2{font-family:var(--font-display);font-weight:600;font-size:clamp(1.5rem,2.4vw,2.1rem);margin:0 0 .4rem;}
+.maker-head .latin{font-family:var(--font-serif);font-style:italic;color:var(--muted-text);font-size:1rem;margin:0;}
+.maker-meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.1rem 1.4rem;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:1.4rem 0 1.8rem;padding:1.1rem 0;}
+.spec span{display:block;font-size:.6rem;font-weight:700;color:#7a7268;margin-bottom:.3rem;}
+.spec strong{display:block;font-size:.76rem;font-weight:600;color:var(--ink);}
+.maker-bio p{font-family:var(--font-serif);font-size:1.03rem;color:#4a4640;line-height:1.8;max-width:76ch;margin:0 0 1.6rem;}
+.maker-lists{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-bottom:1.8rem;}
+.maker-lists h3{font-size:.68rem;font-weight:700;color:#7a7268;margin:0 0 .7rem;}
+.maker-lists ul{margin:0;padding-left:1.1rem;font-family:var(--font-serif);font-size:.94rem;color:#4a4640;line-height:1.6;}
+.katki{border-left:3px solid var(--brass);background:#b6874f14;padding:1rem 1.2rem;font-family:var(--font-serif);font-size:.98rem;color:#554f47;line-height:1.65;max-width:76ch;margin-bottom:2.2rem;}
+.maker-works-title{font-size:.7rem;font-weight:700;color:#7a7268;margin:0 0 1.2rem;padding-top:1.5rem;border-top:1px solid var(--line);}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1.8rem;padding:0;max-width:1180px;margin:0 auto;}
+.item-card{position:relative;display:flex;flex-direction:column;color:inherit;text-decoration:none;background:var(--card-bg);border-radius:2px;overflow:hidden;}
+.item-card::after{content:"";position:absolute;inset:0;pointer-events:none;z-index:2;background:radial-gradient(ellipse at 50% 40%, transparent 50%, rgba(0,0,0,.13) 100%);}
+.item-card .thumb{position:relative;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;overflow:hidden;}
+.item-card .thumb img{width:100%;height:100%;object-fit:contain;padding:1.4rem;}
+.item-card .body{position:relative;z-index:3;padding:1.1rem 1.25rem 1.7rem;flex:1;min-height:9.5rem;}
+.item-card .meta-line{font-size:.62rem;font-weight:700;color:var(--brass-deep);display:flex;justify-content:space-between;gap:.5rem;}
+.item-card h3{font-family:var(--font-display);font-weight:500;font-size:.95rem;color:var(--ink);}
+</style></head><body>
+<header class="site-header"><a href="/calisma-tam/" class="brand" aria-label="HETEGA, anasayfa"><span class="brand-mark">H</span><span>HETEGA</span></a><button class="menu-button" aria-expanded="false" aria-label="Menüyü aç"><span></span><span></span></button><nav class="nav" aria-label="Ana menü"><a href="/#koleksiyonlar">Koleksiyonlar</a><a href="/products">Envanter</a><a href="/artist">Koleksiyon Hakkında</a><a href="/contact">İletişim</a></nav><div class="header-actions"><button aria-label="Açık temaya geç" style="width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer;display:grid;place-items:center;font-size:1rem;margin-right:.4rem">☀</button><a class="header-contact header-text" href="mailto:info@hetega.com"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2M9 11H7V9h2zm4 0h-2V9h2zm4 0h-2V9h2z"></path></svg><span>Yazın</span></a></div></header>
+<section class="maker-section"><div class="maker-inner">
+  <a class="product-back" href="/products/yeni-a356b-neyrizi-kuresel-usturlap-yorumlari/"><span>←</span> İlgili sayfaya dön</a>
+  <div class="maker-head"><p class="eyebrow">Yapımcı / Bilgin</p><h2>el-Fadl b. Hâtim en-Neyrîzî</h2><p class="latin">Al-Nayrizi</p></div>
+  <div class="maker-meta">
+    <div class="spec"><span>Doğum / Ölüm</span><strong>ö. y. 309/922</strong></div>
+    <div class="spec"><span>Bölge</span><strong>Bağdat</strong></div>
+    <div class="spec"><span>Alan</span><strong>Matematik, Astronomi, Öklid Şerhleri</strong></div>
+  </div>
+  <div class="maker-bio"><p>10. yüzyılın en yetkin matematikçi-astronomlarından biri. Öklid'in Elementler'ine yazdığı şerhlerin yanı sıra, küresel usturlap üzerine kurucu metinler kaleme almıştır. Harrânî'nin pratik aletini matematiksel ve geometrik olarak ispatlamıştır.</p></div>
+  <div class="maker-lists"><div><h3>Önemli Eserleri</h3><ul><li>Kitâb fî el-'Amel bi-l-Asturlâb el-Kuravî</li></ul></div><div><h3>Aletleri</h3><ul><li>Küresel Usturlap Teorisi</li><li>Küresel Trigonometri</li></ul></div></div>
+  <div class="katki">Küresel usturlabın kullanım kılavuzunu yazarak, bu aletin Avrupa'ya (özellikle Kastilya Kralı X. Alfonso aracılığıyla) aktarılmasının teorik altyapısını kurmuştur.</div>
+  <p class="maker-works-title">Bu yapımcının katalogdaki eserleri (1 örnek)</p>
+  <div class="card-grid"><a class="item-card" href="/products/yeni-a356b-neyrizi-kuresel-usturlap-yorumlari/"><div class="thumb"></div><div class="body"><div class="meta-line"><span>Usturlaplar · el-Fadl b. Hâtim en-Neyrîzî</span><span class="env">—</span></div><h3>Küresel Usturlap Yorumları</h3></div></a></div>
+</div></section>
+<footer style="grid-template-columns:2fr 1fr"><div class="footer-brand"><span class="brand-mark">H</span><h2>HETEGA</h2><p>Heritage of Engineering &amp; Technology in the Golden Age.</p></div><div><h3>İletişim</h3><a class="footer-icon-link" href="mailto:info@hetega.com"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" aria-hidden="true" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4-8 5-8-5V6l8 5 8-5z"></path></svg><span>info@hetega.com</span></a></div><div class="copyright"><p>© 2026 HETEGA — bir Global Science Advancement koleksiyonu. Tasarım ve üretim: MUKANTARA. İçerik ve görseller Prof. Dr. Fuat Sezgin’in yarım asırlık araştırmalarına dayanmaktadır.</p></div></footer>
+<script>
+(function(){
+  var themeBtn = document.querySelector('.header-actions button[aria-label]');
+  function setIcon(){
+    var isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+    if(themeBtn){ themeBtn.textContent = isDark ? '\u263E' : '\u2600'; themeBtn.setAttribute('aria-label', isDark ? 'Açık temaya geç' : 'Koyu temaya geç'); }
+  }
+  setIcon();
+  if(themeBtn){
+    themeBtn.addEventListener('click', function(){
+      var cur = document.documentElement.getAttribute('data-theme');
+      var next = cur === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', next);
+      localStorage.setItem('mukantara-theme', next);
+      setIcon();
+    });
+  }
+  var menuBtn = document.querySelector('.menu-button');
+  var nav = document.querySelector('.nav');
+  if(menuBtn && nav){
+    menuBtn.addEventListener('click', function(){
+      var open = nav.classList.toggle('is-open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+  }
+})();
+</script>
+</body></html>
