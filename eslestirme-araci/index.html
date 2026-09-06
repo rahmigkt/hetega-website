@@ -23,6 +23,7 @@ header a,header button{color:var(--brass-deep);text-decoration:none;font-size:.7
 .row.selected{background:#8a62381a;outline:2px solid var(--brass);}
 .row.matched{background:#3f7d4f14;}
 .hidden{display:none!important;}
+.matched-hidden{display:none!important;}
 .tick{width:18px;height:18px;margin-top:2px;flex:none;}
 .unmatch-btn{background:#b5473f;color:#fff;border:none;border-radius:999px;padding:.2rem .7rem;font-size:.65rem;font-weight:700;cursor:pointer;margin-left:.6rem;}
 </style></head><body>
@@ -34,6 +35,7 @@ header a,header button{color:var(--brass-deep);text-decoration:none;font-size:.7
 </header>
 <div class="toolbar">
   <input type="text" id="search-box" placeholder="Her iki listede ara — başlık ve açıklama içinde, Türkçe karakter fark etmez…">
+  <label style="display:flex;align-items:center;gap:.4rem;font-size:.78rem;color:var(--muted);cursor:pointer"><input type="checkbox" id="hide-matched" checked onchange="renderMatchState()"> Eşleşenleri gizle</label>
   <div class="counts"><span id="match-count">0</span> eşleşme kaydedildi</div>
 </div>
 <div class="selected-banner" id="selected-banner"></div>
@@ -69,6 +71,11 @@ function renderMatchState(){
     count++;
   }
   el('match-count').textContent = count;
+  var hide = el('hide-matched').checked;
+  document.querySelectorAll('.row').forEach(function(r){
+    r.classList.toggle('matched-hidden', hide && r.classList.contains('matched'));
+  });
+  reapplySearch();
 }
 
 function unmatch(exId){
@@ -137,14 +144,15 @@ function normalizeQuery(s){
   return s;
 }
 
-var box = el('search-box');
-box.addEventListener('input', function(){
-  var q = normalizeQuery(this.value);
+function reapplySearch(){
+  var q = normalizeQuery(el('search-box').value);
   document.querySelectorAll('.row').forEach(function(r){
     var show = !q || r.dataset.search.indexOf(q) !== -1;
     r.classList.toggle('hidden', !show);
   });
-});
+}
+var box = el('search-box');
+box.addEventListener('input', reapplySearch);
 
 renderMatchState();
 </script>
