@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr"><head><script>(function(){var saved=localStorage.getItem("mukantara-theme");var theme=saved==="dark"?"dark":"light";document.documentElement.setAttribute("data-theme",theme);})();</script><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boraks / Tinkal — HETEGA</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#3c4654;--paper:#fdfcf9;--paper-light:#faf9f6;--line:#e2e2e2;--font-display:"Cinzel","EB Garamond",Georgia,serif;--font-serif:"EB Garamond",Georgia,serif;--font-body:"Inter",sans-serif;--brass:#b6874f;--brass-deep:#8a6238;--card-bg:#ececec;--muted-text:#6b7280;--line-on-grey:rgba(60,70,84,.16);}
+*{box-sizing:border-box;}
+body{margin:0;background:var(--paper-light);color:var(--ink);font-family:var(--font-body);-webkit-font-smoothing:antialiased;}
+.deneme-banner{background:#123c5a;color:#f3ede1;text-align:center;padding:.55rem 1rem;font-size:.75rem;line-height:1.5;}
+.deneme-banner strong{color:var(--brass);}
+.site-header{display:flex;align-items:center;justify-content:space-between;padding:1rem 5vw;border-bottom:1px solid var(--line);background:var(--paper);}
+.site-header .brand{display:flex;align-items:center;gap:.5rem;color:var(--ink);text-decoration:none;font-family:var(--font-display);font-weight:600;font-size:1.05rem;}
+.site-header .brand-mark{width:28px;height:28px;border:1px solid var(--brass);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.85rem;}
+.site-header .nav{display:flex;gap:1.6rem;}
+.site-header .nav a{color:var(--ink);text-decoration:none;font-size:.8rem;}
+.product-mock{background:var(--paper);}
+.product-detail{display:grid;grid-template-columns:minmax(420px,1.05fr) minmax(380px,.95fr);align-items:start;gap:clamp(2rem,5vw,4rem);padding:2.6rem 5vw 0;max-width:1320px;margin:0 auto;}
+@media (max-width:860px){.product-detail{grid-template-columns:1fr;}}
+.product-back{display:inline-flex;align-items:center;gap:.6rem;font-size:.72rem;font-weight:700;color:var(--ink);text-decoration:none;margin:0 0 1.4rem;}
+.media-col{padding:0 1rem 3rem;}
+.product-detail-image{width:100%;height:min(60vh,600px);min-height:340px;display:flex;align-items:center;justify-content:center;overflow:hidden;border-radius:24px;background:radial-gradient(ellipse at 50% 40%, var(--card-bg) 0%, var(--card-bg) 45%, rgba(0,0,0,.18) 100%);margin-bottom:1rem;}
+.product-detail-image img{width:100%;height:100%;object-fit:contain;object-position:center;}
+.thumb-row{display:flex;gap:.7rem;flex-wrap:wrap;}
+.thumb-row .thumb{width:74px;height:74px;border-radius:8px;overflow:hidden;background:var(--card-bg);cursor:pointer;border:2px solid transparent;flex:none;}
+.thumb-row .thumb.active{border-color:var(--brass);}
+.thumb-row .thumb img{width:100%;height:100%;object-fit:contain;}
+.no-image{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem;color:var(--brass-deep);opacity:.55;text-align:center;padding:1.5rem;}
+.copy-col{padding:2.4rem 0 3rem;}
+.product-breadcrumb{color:#746c62;font-size:.68rem;margin:0 0 1.6rem;display:flex;flex-wrap:wrap;gap:.4rem;}
+.copy-col .eyebrow{font-size:.7rem;font-weight:600;color:var(--brass-deep);margin:0 0 .6rem;}
+.copy-col h1{font-family:var(--font-display);font-weight:700;font-size:clamp(2.2rem,3.8vw,3.2rem);margin:0 0 1rem;line-height:.98;}
+.kisa-aciklama{font-family:var(--font-serif);font-style:italic;font-size:1rem;color:#554f47;line-height:1.6;margin:0 0 1.8rem;}
+.spec-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.3rem 1.6rem;border-top:1px solid var(--line-on-grey);border-bottom:1px solid var(--line-on-grey);margin:0 0 1.4rem;padding:1.3rem 0;}
+.spec{border-left:1px solid var(--line-on-grey);padding-left:1.1rem;}
+.spec:nth-child(2n+1){border-left:0;padding-left:0;}
+.spec span{display:block;font-size:.57rem;font-weight:700;letter-spacing:.02em;color:#7a7268;margin-bottom:.35rem;text-transform:uppercase;}
+.spec strong{display:block;font-size:.78rem;font-family:var(--font-body);font-weight:600;color:var(--ink);}
+.spec strong a{color:var(--brass-deep);text-decoration:none;border-bottom:1px solid var(--brass);}
+.local-note{color:#6f675c;font-size:.76rem;font-style:italic;margin:0 0 1.8rem;}
+.uzun-aciklama p.tag{font-size:.68rem;font-weight:700;letter-spacing:.02em;color:#6f675c;margin:1.4rem 0 .6rem;text-transform:uppercase;}
+.uzun-aciklama ul{font-family:var(--font-serif);font-size:.98rem;color:#3f3a34;line-height:1.75;margin:0;padding-left:1.3rem;max-width:64ch;}
+.uzun-aciklama .model-box{background:#8a623814;border-left:3px solid var(--brass);padding:.8rem 1rem;font-size:.85rem;color:#6b5a3f;margin-top:1rem;border-radius:0 6px 6px 0;}
+footer{color:#e8e1d7;background:#181613;display:grid;grid-template-columns:2fr 1fr;gap:2.5rem;padding:4rem 5vw 2rem;border-radius:36px 36px 0 0;margin-top:3rem;}
+@media (max-width:700px){footer{grid-template-columns:1fr 1fr;padding:3rem 1.3rem 2rem;}}
+.footer-brand .brand-mark{width:28px;height:28px;border:1px solid #e8e1d7;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);color:#e8e1d7;}
+.footer-brand h2{font-family:var(--font-display),Georgia,serif;font-weight:500;margin:1rem 0 .2rem;font-size:2.1rem;color:#e8e1d7;}
+footer p,footer a{color:#a9a197;font-size:.72rem;line-height:1.8;}
+footer h3{text-transform:uppercase;letter-spacing:.15em;margin-bottom:1.2rem;font-size:.65rem;color:#a9a197;}
+.footer-icon-link{align-items:center;gap:.65rem;display:inline-flex;color:#a9a197;text-decoration:none;}
+.footer-icon-link svg{color:#e8e1d7;flex:none;width:17px;height:17px;}
+.copyright{border-top:1px solid #ffffff1f;grid-column:1/-1;margin:2.5rem 0 0;padding-top:1.5rem;}
+.copyright p{color:#9c9284;margin:0;}
+[data-theme=dark]{--ink:#ece4d3;--paper:#100e0c;--paper-light:#17140f;--line:#ece4d324;--brass:#b8874a;--card-bg:#17140f;--muted-text:#a89e8e;}
+[data-theme=dark] footer{background:#000;}
+.menu-button{display:none;}
+.site-header{position:relative;}
+@media (max-width:820px){.nav{position:absolute;top:100%;left:0;right:0;background:var(--paper);flex-direction:column;gap:1rem;padding:1.2rem 5vw;border-bottom:1px solid var(--line);display:none;z-index:10;} .nav.is-open{display:flex;} .menu-button{display:inline-flex!important;flex-direction:column;justify-content:center;gap:5px;width:34px;height:34px;border:none;background:transparent;cursor:pointer;} .menu-button span{display:block;width:22px;height:2px;background:var(--ink);}}
+</style></head><body>
+<div class="deneme-banner"><strong>📖 KATALOG</strong> — Fuat Sezgin, İslam'da Bilim ve Teknik, Cilt IV, s. 196</div>
+<header class="site-header"><a href="/calisma-tam/" class="brand" aria-label="HETEGA, anasayfa"><span class="brand-mark">H</span><span>HETEGA</span></a><button class="menu-button" aria-expanded="false" aria-label="Menüyü aç"><span></span><span></span></button><nav class="nav" aria-label="Ana menü"><a href="/#koleksiyonlar">Koleksiyonlar</a><a href="/products">Envanter</a><a href="/artist">Koleksiyon Hakkında</a><a href="/contact">İletişim</a></nav><div class="header-actions"><button aria-label="Açık temaya geç" style="width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:transparent;color:var(--ink);cursor:pointer;display:grid;place-items:center;font-size:1rem;margin-right:.4rem">☀</button></div></header>
+<div class="product-mock"><div class="product-detail">
+  <div class="media-col">
+    <div class="product-detail-image" id="main-img-box"><img src="/kutuphane/katalog2/k344-421.jpg" alt="Boraks / Tinkal"></div>
+    <div class="thumb-row"><div class="thumb active" data-full="/kutuphane/katalog2/k344-421.jpg"><img src="/kutuphane/katalog2/k344-421.jpg" alt=""></div></div>
+  </div>
+  <div class="copy-col">
+    <a class="product-back" href="/products"><span>←</span> Envantere dön</a>
+    <p class="product-breadcrumb"><span>Envanter</span> / <span>Kimya</span> / <span>Mineraller ve Fosil Cevherler Koleksiyonu</span></p>
+    <p class="eyebrow">Boraks / Tinkal</p><h1>Boraks / Tinkal</h1>
+    <p class="kisa-aciklama">Özgün ad / kaynak: būraḳ ve tinkār; er-Râzî ayrı/birlikte ele alır</p>
+    <div class="spec-row">
+      <div class="spec"><span>Kategori</span><strong>Kimya</strong></div>
+      <div class="spec"><span>Alt Kategori</span><strong>Mineraller ve Fosil Cevherler Koleksiyonu</strong></div>
+      <div class="spec"><span>Yapımcı / Bilgin</span><strong>—</strong></div>
+      <div class="spec"><span>Orijinalin Yeri</span><strong>—</strong></div>
+    </div>
+    <p class="local-note">Kaynak: <strong>İslam'da Bilim ve Teknik, Cilt IV, s. 196</strong></p>
+    <div class="uzun-aciklama">
+      <p class="tag">İşlevi</p><p style="font-family:var(--font-serif);font-size:1.03rem;color:#3f3a34;line-height:1.8;max-width:62ch">Kimya/lehim</p>
+      
+      <div class="model-box">Model / Teknik bilgiler: (Envanter No: K 3.13a ve K 3.13b)</div>
+    </div>
+  </div>
+</div><footer style="grid-template-columns:2fr 1fr"><div class="footer-brand"><span class="brand-mark">H</span><h2>HETEGA</h2><p>Heritage of Engineering &amp; Technology in the Golden Age.</p></div><div><h3>İletişim</h3><a class="footer-icon-link" href="mailto:info@hetega.com"><span>info@hetega.com</span></a></div><div class="copyright"><p>© 2026 HETEGA — bir Global Science Advancement koleksiyonu. Tasarım ve üretim: MUKANTARA. İçerik ve görseller Prof. Dr. Fuat Sezgin'in yarım asırlık araştırmalarına dayanmaktadır.</p></div></footer></div>
+<script>
+(function(){
+  var themeBtn = document.querySelector('.header-actions button[aria-label]');
+  function setIcon(){ var isDark = document.documentElement.getAttribute('data-theme') === 'dark'; if(themeBtn){ themeBtn.textContent = isDark ? '\u263E' : '\u2600'; } }
+  setIcon();
+  if(themeBtn){ themeBtn.addEventListener('click', function(){ var cur = document.documentElement.getAttribute('data-theme'); var next = cur === 'dark' ? 'light' : 'dark'; document.documentElement.setAttribute('data-theme', next); localStorage.setItem('mukantara-theme', next); setIcon(); }); }
+  var menuBtn = document.querySelector('.menu-button'); var nav = document.querySelector('.nav');
+  if(menuBtn && nav){ menuBtn.addEventListener('click', function(){ var open = nav.classList.toggle('is-open'); menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false'); }); }
+  var thumbs = document.querySelectorAll('.thumb-row .thumb');
+  var mainBox = document.getElementById('main-img-box');
+  thumbs.forEach(function(t){
+    t.addEventListener('click', function(){
+      thumbs.forEach(function(x){x.classList.remove('active')});
+      t.classList.add('active');
+      mainBox.innerHTML = '<img src="' + t.dataset.full + '" alt="">';
+    });
+  });
+})();
+</script>
+</body></html>
